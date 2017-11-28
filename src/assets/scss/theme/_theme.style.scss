@@ -1,0 +1,450 @@
+/*
+|--------------------------------------------------------------------------
+| #THEME
+|--------------------------------------------------------------------------
+*/
+
+* {
+    outline: none;
+}
+
+hr {
+    border-color: color(primary);
+    border-bottom-width: 3px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        background: url('../img/icons/heading__left.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-right: .5rem;
+    }
+
+    &:after {
+        content: '';
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        background: url('../img/icons/heading__right.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-left: .5rem;
+    }
+}
+
+
+
+// #HERO
+// =========================================================================
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/hero__bg.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        max-height: 500px;
+
+        @include breakpoint(medium) {
+            max-width: 80%;
+        }
+    }
+
+    a {
+        font-size: ms(3);
+    }
+}
+
+.button__group {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+// #NEW
+// =========================================================================
+
+.new {
+
+    &__content {
+        @include grid($display: block);
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .button {
+        color: color(white);
+        background: color(primary);
+        font-size: ms(2);
+        margin-top: 2rem;
+    }
+
+    svg {
+        max-height: 1rem;
+        max-width: 2rem;
+        margin: .15rem .25rem;
+    }
+}
+
+
+
+// #ABOUT
+// =========================================================================
+
+.about {
+    background: url('../img/about__bg.jpg');
+    background-size: cover;
+    color: color(white);
+
+    h2,
+    h6 {
+        color: color(white);
+    }
+
+    &__content {
+        @include grid($display: block);
+        padding: 3rem;
+        text-align: center;
+    }
+    
+    ul {
+        padding: 0;
+        list-style-type: none;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+// #EXPERIENCE
+// =========================================================================
+
+.experience {
+
+    &__content {
+        @include grid($maw: 100%);
+
+        @include breakpoint(medium) {
+            padding: 0;
+        }
+    }
+
+    img {
+        float: right;
+        max-width: 300px;
+    }
+
+    &__left,
+    &__right {
+        width: 50%;
+        padding: 3rem;
+        min-height: 250px;
+
+        @include breakpoint(medium) {
+            width: 100%;
+        }
+    }
+
+    &__left {
+        background: url('../img/experience__bg.jpg');
+        background-size: cover;
+    }
+
+    ul {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+// #PACKAGES
+// =========================================================================
+
+.packages {
+    background: url('../img/services__bg.jpg');
+    background-size: cover;
+    text-align: center;
+
+    h2,
+    h6 {
+        color: color(white);
+    }
+
+    h3 {
+        position: relative;
+        padding-left: .5rem;
+        text-align: left;
+        margin-bottom: 0;
+
+        span {
+            display: block;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background: color(primary);
+        }
+    }
+
+    &__content {
+        @include grid($display: block);
+        padding: 5rem 0;
+    }
+
+    &__cards {
+        display: flex;
+
+        @include breakpoint(medium) {
+            display: block;
+        }
+    }
+
+    &__card {
+        width: calc(33.3333% - 1rem);
+        margin-right: 1rem;
+        border-radius: radius(small);
+        overflow: hidden;
+        @include shadow(heavy);
+
+        @include breakpoint(medium) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &-title {
+            padding: 1rem;
+            background: color(white);
+        }
+
+        &-content {
+            padding: 1rem;
+            background: url('../img/card__bg.jpg');
+            background-size: cover;
+            color: color(white);
+
+            @include breakpoint(medium) {
+                background-position: center;
+            }
+        }
+    }
+}
+
+
+// #CONTACT
+// =========================================================================
+
+.contact {
+    margin: 1rem;
+    padding: 3rem 0;
+    background: url('../img/contact__bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+        color: color(white);
+        font-size: ms(6);
+    }
+
+    &__content {
+        color: color(white);
+        text-align: center;
+        @include grid($display: block);
+    }
+}
+
+.form__fields {
+    display: flex;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    @include breakpoint(medium) {
+        display: block;
+        width: 100%;
+    }
+}
+
+input {
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background: color(white);
+
+    @include breakpoint(medium) {
+        min-width: 100%;
+        margin-right: 0;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+textarea {
+    min-height: 50px;
+    width: 100%;
+    margin-bottom: 1rem;
+    background: color(white);
+}
+
+
+
+// #FOOTER
+// =========================================================================
+
+.footer {
+    background: color(black);
+    overflow: hidden;
+
+    &__socials {
+        float: right;
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background: color(primary);
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+// #FOOTER
+// =========================================================================
+
+$width: 100px;
+
+.loader__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: color(black);
+    z-index: z(highest);
+    transition: transform .3s ease(inOutSine);
+
+    &.is--loaded {
+        transform: translateY(-100vh);
+    }
+}
+
+.loader {
+  position: relative;
+  margin: 0 auto;
+  width: $width;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.circular {
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes color {
+  100%,
+  0% {
+    stroke: color(primary);
+  }
+  40% {
+    stroke: color(white);
+  }
+  66% {
+    stroke: color(primary);
+  }
+  80%,
+  90% {
+    stroke: color(white);
+  }
+}

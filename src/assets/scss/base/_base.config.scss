@@ -1,0 +1,112 @@
+/*
+|--------------------------------------------------------------------------
+| #CONFIG
+|--------------------------------------------------------------------------
+*/
+
+
+
+// #CONFIG COLORS
+// =========================================================================
+
+    // Theme
+    $primary: #1473FB;
+    $secondary: #14326C;
+    $accent: #FDB557;
+
+    // Utility
+    $error: #F8729D;
+    $success: #26DDA5;
+
+    // Greys
+    $grey: #ADB5BD;
+
+    $grey-light: #DEE2E6;
+    $grey-lighter: #E9ECEF;
+    $grey-lightest: #F8F8F8;
+
+    $grey-dark: #495057;
+    $grey-darker: #343A40;
+    $grey-darkest: #212529;
+
+    $white: #ffffff;
+    $black: #18161c;
+
+
+
+// #CONFIG TYPOGRAPHY
+// =========================================================================
+
+    // Fonts
+    @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+    $font-one: 'Raleway';
+    $font-two: 'Oswald';
+    $font-mono: 'Monospace';
+
+    // Font Size
+    $font-size: 1rem;
+
+    // Colors
+    $font-color: $grey-dark;
+    $heading-color: $grey-darker;
+
+    //Heading Weight
+    $heading-weight: normal;
+
+    // Options
+
+    $ms-ratio  : 1.125 !default;
+    $ms-base   : $font-size;
+    $ms-scale  : 3 !default;
+
+
+
+// #CONFIG SHADOW
+// =========================================================================
+
+    $has-shadow: true !default;
+
+
+
+// #CONFIG RADIUS
+// =========================================================================
+
+
+    $has-radius: true !default;
+
+
+
+// #CONFIG NAV
+// =========================================================================
+
+    $nav-is-right: true !default;
+    $nav-is-fixed: true !default;
+
+// #CONFIG BREAKPOINTS
+// =========================================================================
+
+    $small: 30em; // 480px
+    $medium: 48em; // 768px
+    $large: 90em; // 1440px
+    $extra-large: 120em; // 1920px
+
+
+
+// #CONFIG GRID
+// =========================================================================
+
+    $gutter: 1rem;
+
+
+
+// #CONFIG Z-INDEX
+// =========================================================================
+
+    $lower: 0;
+    $low: 20;
+    $middle: 40;
+    $high: 60;
+    $higher: 80;
+    $highest: 100;
