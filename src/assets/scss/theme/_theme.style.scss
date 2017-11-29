@@ -208,7 +208,24 @@ h2 {
             left: 0;
             height: 100%;
             width: 3px;
-            background: color(primary);
+        }
+
+        &.diamond {
+            &:before {
+                background: #6dcff6;
+            }
+        }
+
+        &.gold {
+            &:before {
+                background: #f1be1a;
+            }
+        }
+
+        &.platinum {
+            &:before {
+                background: #acacac;
+            }
         }
     }
 
@@ -219,18 +236,59 @@ h2 {
 
     &__cards {
         display: flex;
+        position:relative;
+
+        .glow-left, .glow-right {
+            position:absolute;
+            max-height:110%;
+            z-index:$lower;
+        }
+
+        .gold-glow-left {
+            top:-10rem;
+            left:-4rem;
+        }
+
+        .gold-glow-right {
+            bottom:-4rem;
+            left:calc(33.3333% - 6.9rem);
+        }
+
+        .plat-glow-left {
+            top:-7rem;
+            left:calc(33.3333% - 3.3rem);
+        }
+
+        .plat-glow-right {
+            bottom:-4rem;
+            left:calc(66.6666% - 6.2rem);
+        }
+
+        .diamond-glow-left {
+            top:-10rem;
+            left:calc(66.6666% - 4rem);
+        }
+
+        .diamond-glow-right {
+            bottom:-4rem;
+            right:-1rem;
+        }
 
         @include breakpoint(medium) {
             display: block;
+
+            .glow-left, .glow-right {
+                display:none;
+            }
         }
     }
 
     &__card {
-        width: calc(33.3333% - 1rem);
-        margin-right: 1rem;
+        width: calc(33.3333% - 3rem);
+        margin-right: 3rem;
         border-radius: radius(small);
-        overflow: hidden;
         @include shadow(heavy);
+        z-index:$higher;
 
         @include breakpoint(medium) {
             width: 100%;
@@ -249,9 +307,27 @@ h2 {
 
         &-content {
             padding: 1rem;
-            background: url('../img/card__bg.jpg');
             background-size: cover;
             color: color(white);
+            position:relative;
+
+            &.gold {
+                background: url('../img/gold-card__bg.jpg');
+                min-height:330px;
+                background-size:cover;
+            }
+
+            &.platinum {
+                background: url('../img/plat-card__bg.jpg');
+                min-height:330px;
+                background-size:cover;
+            }
+
+            &.diamond {
+                background: url('../img/diamond-card__bg.jpg');
+                min-height:330px;
+                background-size:cover;
+            }
 
             @include breakpoint(medium) {
                 background-position: center;

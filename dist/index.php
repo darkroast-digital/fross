@@ -19,7 +19,7 @@
 
     <!-- Title and Description -->
 
-    <title>DJ Fross Productions | Home</title>
+    <title>Frass International | Home</title>
 
     <!-- Favicons -->
 
@@ -27,11 +27,11 @@
 
     <!-- Open Graph -->
 
-    <meta property="og:title" content="DJ Fross Productions">
-    <meta property="og:description" content="DJ Fross productions is a high energy and professional DJ company.  We offer the most competitive DJ service packages. Our bundles always include a professional DJ, premium sound system and intelligent lighting effects.">
+    <meta property="og:title" content="Frass International">
+    <meta property="og:description" content="Frass International is a high energy and professional DJ company.  We offer the most competitive DJ service packages. Our bundles always include a professional DJ, premium sound system and intelligent lighting effects.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="djross.com">
-    <meta property="og:site_name" content="DJ Fross Productions">
+    <meta property="og:site_name" content="Frass International">
     <meta property="og:image" content=" /assets/img/og.jpg">
 
     <!--[if lt IE 9]>
@@ -73,7 +73,7 @@
 
         <nav class="nav">
             <div class="nav__container">
-                <a href="/" class="nav__brand">DJ Fross Productions</a>
+                <a href="/" class="nav__brand">Frass International</a>
                 <ul class="nav__navbar">
                     <li class="is--active"><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
@@ -118,14 +118,15 @@ v125.7h108.1c20.7,0,37.6-17.4,37.6-38.9C291.3,85.3,274.5,68,253.7,68z"/></g></sv
         <section class="about" id="about">
             <div class="about__content">
                 <h2>About Us</h2>
-                <p>DJ Fross productions is a high energy and professional DJ company.  We offer the most competitive DJ service packages. Our bundles always include a professional DJ, premium sound system and intelligent lighting effects.</p>
-                <p>Do you need obscure or ethnic music played at your event? No Problem, we can accommodate almost any style and type of music.  Our extensive music library numbers well over 100,000 songs, including international favourites and fun novelty tracks.</p>
+                <p>Frass International Sound and Lighting is a high energy and professional DJ and sound rental company that offer the most competitive DJ service packages and rental fees. Our packages always include a professional DJ, premium sound system and intelligent lighting effects.</p>
+                <p>Do you need obscure or ethnic music played at your event? No Problem, we can accommodate almost any style of music. Our extensive music library numbers well over 100,000 songs, including international favourites and fun novelty tracks. All our Djs are trained announcers who interact with our clients and their guests and are warm, friendly and approachable. </p>
                 <p>Every package that we offer includes:</p>
                 <ul>
                     <li>• A professionally trained, properly dressed host</li>
                     <li>• An extensive digitally formatted music library</li>
                     <li>• A professional sound system</li>
                     <li>• Free wedding consultation</li>
+                    <li>• Unlimited music library planning</li>
                 </ul>
                 <h6>*EVERY PACKAGE THAT WE OFFER CAN BE CUSTOMIZED TO MEET YOUR NEEDS.</h6>
             </div>
@@ -164,50 +165,53 @@ v125.7h108.1c20.7,0,37.6-17.4,37.6-38.9C291.3,85.3,274.5,68,253.7,68z"/></g></sv
 
         <section class="packages" id="packages">
             <div class="packages__content">
-                <h2>Package Examples</h2>
+                <h2>Packages</h2>
                 <div class="packages__cards">
+                    <img src="assets/img/gold-glow.png" class="glow-left gold-glow-left">
                     <div class="packages__card">
                         <div class="packages__card-title">
-                            <h3>
-                                Basic Wedding Package
-                                <span>Starting at $1250</span>
+                            <h3 class="gold">
+                                Gold Package
+                                <span>Ideal for parties & events accommodating 40-80 guests</span>
                             </h3>
                         </div>
-                        <div class="packages__card-content">
-                            <p>This Package is ideal for smaller weddings. We recommend this package at venues with 40-80 Guests.</p>
-                            <p>Includes up to 5 Hours of music, a sound system with subwoofers, DJ service, a wired microphone, and 1 dance floor lighting effect.</p>
+                        <div class="packages__card-content gold">
+                            
                         </div>
                     </div>
+                    <img src="assets/img/gold-glow.png" class="glow-right gold-glow-right">
 
                     <!-- End Card -->
 
+                    <img src="assets/img/plat-glow.png" class="glow-left plat-glow-left">
                     <div class="packages__card">
                         <div class="packages__card-title">
-                            <h3>
-                                Nightclub Appearance
-                                <span>Starting at $300</span>
+                            <h3 class="platinum">
+                                Platinum Package
+                                <span>Ideal for parties & events accommodating 80-120 guests</span>
                             </h3>
                         </div>
-                        <div class="packages__card-content">
-                            <p>This Package is ideal for smaller weddings. We recommend this package at venues with 40-80 Guests.</p>
-                            <p>Includes up to 5 Hours of music, a sound system with subwoofers, DJ service, a wired microphone, and 1 dance floor lighting effect.</p>
+                        <div class="packages__card-content platinum">
+                            
                         </div>
                     </div>
+                    <img src="assets/img/plat-glow.png" class="glow-left plat-glow-right">
 
                     <!-- End Card -->
                     
+                    <img src="assets/img/diamond-glow.png" class="glow-left diamond-glow-left">
                     <div class="packages__card">
                         <div class="packages__card-title">
-                            <h3>
-                                Private Party Package
-                                <span>Starting at $1250</span>
+                            <h3 class="diamond">
+                                Diamond Package
+                                <span>Ideal for parties & events accommodating 120+ guests</span>
                             </h3>
                         </div>
-                        <div class="packages__card-content">
-                            <p>This Package is ideal for smaller weddings. We recommend this package at venues with 40-80 Guests.</p>
-                            <p>Includes up to 5 Hours of music, a sound system with subwoofers, DJ service, a wired microphone, and 1 dance floor lighting effect.</p>
+                        <div class="packages__card-content diamond">
+                            
                         </div>
                     </div>
+                    <img src="assets/img/diamond-glow.png" class="glow-left diamond-glow-right">
 
                     <!-- End Card -->
                     
