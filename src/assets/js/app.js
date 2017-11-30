@@ -77,27 +77,37 @@ menuTrigger.addEventListener('click', function () {
 // #FORM
 // ========================================================================
 
-var form = $('.form');
+// var form = $('.form');
 
-$(form).submit((e) => {
-  e.preventDefault();
+// $(form).submit(function(e) {
+//   e.preventDefault();
 
-  axios.post('/', {
-    name: $('[name="name"]').val(),
-    email: $('[name="email"]').val(),
-  })
-  .then((response) => {
-    $('input').val('');
-    $('textarea').val('');
-    $('<div class="alert success">Your Message Was Sent!  We\'ll be in touch.</div>').insertAfter(form);
-    console.log('success' + response);
-  })
-  .catch((error) => {
-    $('input').val('');
-    $('textarea').val('');
-    $('<div class="alert error">Oh no!  Something went wrong, give it another shot.</div>').insertAfter(form);
-    console.log('error' + error);
-  });
-});
+//   var formData = new FormData($(this)[0]);
+
+//   //if files => formData.append('file', $('input[type=file]')[0].files[0]);
+
+//   $.ajax({
+//     type: 'post',
+//     url: $(this).attr('action'),
+//     data: formData,
+//     processData: false,
+//     contentType: false
+//   })
+//   .done(function (response) {
+//     $('input').val('');
+//     $('textarea').val('');
+//     $('<div class="alert is-success">Your Message Was Sent! We\'ll be in touch.</div>').insertAfter(form);
+    
+//     console.log('success' + response);
+//   })
+//   .fail(function (data) {
+//     $('input').val('');
+//     $('textarea').val('');
+//     $('<div class="alert is-error">Oh no! Something went wrong, try again.</div>').insertAfter(form);
+    
+//     console.log('fail' + data);
+//   })
+
+// });
 
 

@@ -23,3 +23,5 @@ $mg->messages()->send('frassinternational.com', [
                 'Phone: ' . $phone . "\n" .
                 'Message: ' . $message . "\n"
 ]);
+
+header('Location: /');
