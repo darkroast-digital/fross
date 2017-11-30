@@ -15,10 +15,10 @@ $message = $_POST['message'];
 # $mg->messages()->send($domain, $params);
 $mg->messages()->send('frassinternational.com', [
   'from'    => $_POST['email'],
-  'to'      => 'josh@darkroast.co',
+  'to'      => 'contact@frassinternational.com',
   'subject' => 'A new contact from ' . $name,
   'html'    => 'Name: ' . $name . "\n" .
-                'Comapny: ' . $comapny . "\n" .
+                'Company: ' . $company . "\n" .
                 'Email: ' . $email . "\n" .
                 'Phone: ' . $phone . "\n" .
                 'Message: ' . $message . "\n"
