@@ -1255,25 +1255,11 @@ video {
 */
 html {
   color: #495057;
-}
-
-html {
-  font-size: 0.9rem;
-}
-
-@media screen and (min-width: 30em) {
-  html {
-    font-size: calc(0.9rem + 0.1 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  html {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 
 html * {
+  color: inherit;
   font-family: "Raleway";
   letter-spacing: -.1px;
 }
@@ -1295,31 +1281,13 @@ html * {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
+  color: #343A40;
   font-family: "Oswald";
-  color: #18161c;
 }
 
 h1 {
-  font-size: 2.027rem;
   font-weight: normal;
   margin-bottom: calc((1.266rem - 1.125rem) + 1.266rem);
-}
-
-h1 {
-  font-size: 1.802rem;
-}
-
-@media screen and (min-width: 30em) {
-  h1 {
-    font-size: calc(1.802rem + 0.225 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  h1 {
-    font-size: 2.027rem;
-  }
 }
 
 h2 {
@@ -1327,41 +1295,9 @@ h2 {
   margin-bottom: calc((1.266rem - 1.266rem) + 1.266rem);
 }
 
-h2 {
-  font-size: 1.602rem;
-}
-
-@media screen and (min-width: 30em) {
-  h2 {
-    font-size: calc(1.602rem + 0.2 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  h2 {
-    font-size: 1.802rem;
-  }
-}
-
 h3 {
   font-weight: normal;
   margin-bottom: calc((1.266rem - 1.424rem) + 1.266rem);
-}
-
-h3 {
-  font-size: 1.424rem;
-}
-
-@media screen and (min-width: 30em) {
-  h3 {
-    font-size: calc(1.424rem + 0.178 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  h3 {
-    font-size: 1.602rem;
-  }
 }
 
 h4 {
@@ -1369,62 +1305,14 @@ h4 {
   margin-bottom: calc((1.266rem - 1.602rem) + 1.266rem);
 }
 
-h4 {
-  font-size: 1.266rem;
-}
-
-@media screen and (min-width: 30em) {
-  h4 {
-    font-size: calc(1.266rem + 0.158 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  h4 {
-    font-size: 1.424rem;
-  }
-}
-
 h5 {
   font-weight: normal;
   margin-bottom: calc((1.266rem - 1.802rem) + 1.899rem);
 }
 
-h5 {
-  font-size: 1.125rem;
-}
-
-@media screen and (min-width: 30em) {
-  h5 {
-    font-size: calc(1.125rem + 0.141 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  h5 {
-    font-size: 1.266rem;
-  }
-}
-
 h6 {
   font-weight: normal;
   margin-bottom: calc((1.266rem - 2.027rem) + 1.899rem);
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-@media screen and (min-width: 30em) {
-  h6 {
-    font-size: calc(1rem + 0.125 * (100vw - 30em) / 60);
-  }
-}
-
-@media screen and (min-width: 90em) {
-  h6 {
-    font-size: 1.125rem;
-  }
 }
 
 p {
